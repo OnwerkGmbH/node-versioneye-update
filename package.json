@@ -3,7 +3,7 @@
   "description": "Update an existing project at VersionEye.com via the API",
   "author": "Onwerk GmbH <kontakt@onwerk.de>",
   "version": "1.0.0",
-  "private": "false",
+  "private": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/OnwerkGmbH/node-versioneye-update"
