@@ -1,0 +1,39 @@
+{
+  "name": "versioneye-update",
+  "description": "Update an existing project at VersionEye.com via the API",
+  "author": "Onwerk GmbH <kontakt@onwerk.de>",
+  "version": "1.0.0",
+  "private": "false",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OnwerkGmbH/node-versioneye-update"
+  },
+  "bugs": {
+    "url": "https://github.com/OnwerkGmbH/node-versioneye-update/issues"
+  },
+  "keywords": [
+    "versioneye",
+    "version",
+    "dependencies",
+    "ci",
+    "commandline",
+    "continuous integration",
+    "jenkins",
+    "hudson"
+  ],
+  "dependencies": {
+    "colors": "^1.1.2",
+    "command-line-args": "^1.0.x",
+    "minimatch": "^2.0.10",
+    "pkginfo": "^0.3.0",
+    "prettyjson": "^1.1.3",
+    "request": "^2.58.x",
+    "underscore": "^1.8.3"
+  },
+  "main": "./lib/index.js",
+  "preferGlobal": "true",
+  "directories": {
+    "bin": "./bin"
+  },
+  "license": "MIT"
+}
