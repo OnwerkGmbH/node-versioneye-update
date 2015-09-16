@@ -2,8 +2,10 @@
 
 # versioneye-update
 
-VersionEye can monitor your project on GitHub/Bitbucket and notify you about out-dated dependencies and license violations. The integration via the GitHub/Bitbucket API works very well and is very convenient. However, this only works with publicly hosted repositories. 
-This project uses the VersionEye API to update an already created VersionEye project with the current revision of a monitored file.
+[VersionEye](https://www.versioneye.com) can monitor your project on GitHub/Bitbucket and notify you about out-dated dependencies and license violations. The integration via the GitHub/Bitbucket API works very well and is very convenient. However, this only works with publicly hosted repositories. 
+
+This module uses the VersionEye API to update an already created VersionEye project with the current revision of a monitored file. VersionEye will automatically check your project and notify you about outdated dependencies. 
+
 The command line tool can be integrated in build jobs running on continuous integration systems like Jenkins.
 
 ## Installation
@@ -17,16 +19,29 @@ $ npm install versioneye-update -g
 Update a node.js project in the current directory:
 
 ```bash
-versioneye-update --apikey <API_KEY> --projectid <PROJECT_ID> 
+$ versioneye-update --apikey <API_KEY> --projectid <PROJECT_ID> 
 ```
 
 Upload an other project type: 
+
 ```bash
-versioneye-update --apikey <API_KEY> --projectid <PROJECT_ID> --file <PROJECT_FILE>
+$ versioneye-update --apikey <API_KEY> --projectid <PROJECT_ID> --file <PROJECT_FILE>
 ```
+
+## API Key
+You can use some of the resources at the VersionEye API without an API KEY, but for uploading project files you need one. If you are signed up you can find your API KEY here: https://www.versioneye.com/settings/api.
+
+![VersionEye Dependencies](https://raw.githubusercontent.com/versioneye/versioneye_maven_plugin/master/src/site/images/VersionEyeApiKey.png)
+
+## Example integration 
+
+Use versioneye-update as a[Jenkins](https://jenkins-ci.org/) Post-build Action
+
+![Jenkins integration](http://www.onwerk.de/wp-content/uploads/2015/09/jenkins-integration.png)	
+
 ## Supported project files 
 
-Currently VersionEye supports 11 package managers. You can throw any of this project files against the [VersionEye API](https://www.versioneye.com/api/). 
+Currently VersionEye supports various package managers. You can throw any of this project files against the [VersionEye API](https://www.versioneye.com/api/). 
 
  - Gemfile 
  - Gemfile.lock 
@@ -43,8 +58,6 @@ Currently VersionEye supports 11 package managers. You can throw any of this pro
  - project.clj 
  - *.gradle 
  - *.sbt 
- 
-For Maven multi module projects (reactor builds) please use the [VersionEye Maven Plugin](https://github.com/versioneye/versioneye_maven_plugin). 
 
 ## Feedback 
 
