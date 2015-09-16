@@ -4,7 +4,7 @@
 
 [VersionEye](https://www.versioneye.com) can monitor your project on GitHub/Bitbucket and notify you about out-dated dependencies and license violations. The integration via the GitHub/Bitbucket API works very well and is very convenient. However, this only works with publicly hosted repositories. 
 
-This module uses the VersionEye API to update an already created VersionEye project with the current revision of a monitored file. VersionEye will automatically check your project and notify you about outdated dependencies. 
+This module uses the VersionEye API to update an already created VersionEye project with the current revision of a monitored file. VersionEye will automatically check your project and notify you about outdated dependencies. This can be used to monitor dependency files of internally hosted projects.
 
 The command line tool can be integrated in build jobs running on continuous integration systems like Jenkins.
 
