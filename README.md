@@ -35,7 +35,7 @@ You can use some of the resources at the VersionEye API without an API KEY, but 
 
 ## Example integration 
 
-Use versioneye-update as a[Jenkins](https://jenkins-ci.org/) Post-build Action
+Use versioneye-update as a [Jenkins](https://jenkins-ci.org/) Post-build Action
 
 ![Jenkins integration](http://www.onwerk.de/wp-content/uploads/2015/09/jenkins-integration.png)	
 
