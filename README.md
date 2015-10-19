@@ -27,6 +27,12 @@ Upload an other project type:
 ```bash
 $ versioneye-update --apikey <API_KEY> --projectid <PROJECT_ID> --file <PROJECT_FILE>
 ```
+Upload using enterprise VersionEye API:
+
+```bash
+$ versioneye-update --apikey <API_KEY> --projectid <PROJECT_ID> --file <PROJECT_FILE> --basepath <ENTERPRISE_API_URL>
+```
+
 
 ## API Key
 You can use some of the resources at the VersionEye API without an API KEY, but for uploading project files you need one. If you are signed up you can find your API KEY here: https://www.versioneye.com/settings/api.
