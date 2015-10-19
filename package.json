@@ -23,7 +23,7 @@
   ],
   "dependencies": {
     "colors": "^1.1.2",
-    "command-line-args": "^1.0.x",
+    "command-line-args": "^2.0.2",
     "minimatch": "^3.0.0",
     "pkginfo": "^0.3.0",
     "prettyjson": "^1.1.3",
