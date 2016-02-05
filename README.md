@@ -30,7 +30,7 @@ $ versioneye-update --apikey <API_KEY> --projectid <PROJECT_ID> --file <PROJECT_
 Upload using enterprise VersionEye API:
 
 ```bash
-$ versioneye-update --apikey <API_KEY> --projectid <PROJECT_ID> --file <PROJECT_FILE> --basepath <ENTERPRISE_API_URL>
+$ versioneye-update --apikey <API_KEY> --projectid <PROJECT_ID> --file <PROJECT_FILE> --baseurl <ENTERPRISE_API_URL>
 ```
 
 
