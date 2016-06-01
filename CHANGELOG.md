@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.2.0] - 06/01/2016
+### Added
+- [#5](https://github.com/OnwerkGmbH/node-versioneye-update/issues/5) Implemented license check, security check.
+- Added option to return exit code to signal outdated components.
+- More options to control behaviour.
+
+
 ## [1.1.0] - 10/19/2015
 ### Added
 - [#2](https://github.com/OnwerkGmbH/node-versioneye-update/pull/2) New command line parameter for server host. This enables the usage of versioneye-update for VersionEye Enterprise servers. (@kwiatekus)
