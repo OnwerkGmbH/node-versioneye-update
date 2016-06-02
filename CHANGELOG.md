@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.2.1] - 06/02/2016
+### Changed
+- Explicitly defining bin-path in package.json für [npm bug on windows](https://github.com/npm/npm/issues/10604), fixing [#6](https://github.com/OnwerkGmbH/node-versioneye-update/issues/6)
+
 ## [1.2.0] - 06/01/2016
 ### Added
 - [#5](https://github.com/OnwerkGmbH/node-versioneye-update/issues/5) Implemented license check, security check.
