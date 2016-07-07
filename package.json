@@ -2,7 +2,7 @@
   "name": "versioneye-update",
   "description": "Update an existing project at VersionEye.com via the API",
   "author": "Onwerk GmbH <kontakt@onwerk.de>",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "private": false,
   "repository": {
     "type": "git",

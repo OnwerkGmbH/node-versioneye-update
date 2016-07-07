@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.2.2] - 07/07/2016
+### Changed
+- Changed Windows-style line endings to Unix-style line endings for bin/versioneye-update, fixing [#7](https://github.com/OnwerkGmbH/node-versioneye-update/issues/7)
+
 ## [1.2.1] - 06/02/2016
 ### Changed
 - Explicitly defining bin-path in package.json für [npm bug on windows](https://github.com/npm/npm/issues/10604), fixing [#6](https://github.com/OnwerkGmbH/node-versioneye-update/issues/6)
