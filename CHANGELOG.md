@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.3.0] - 07/27/2016
+### Added
+- Allow upload of project files for package manager Nuget (Microsoft .NET platform) and Berkshelf (Chef)
+
 ## [1.2.2] - 07/07/2016
 ### Changed
 - Changed Windows-style line endings to Unix-style line endings for bin/versioneye-update, fixing [#7](https://github.com/OnwerkGmbH/node-versioneye-update/issues/7)
