@@ -6,7 +6,11 @@
 
 This module uses the VersionEye API to update an already created VersionEye project with the current revision of a monitored file. VersionEye will automatically check your project and notify you about outdated dependencies. This can be used to monitor dependency files of internally hosted projects.
 
-The command line tool can be integrated in build jobs running on continuous integration systems like Jenkins.
+The command line tool can be integrated in build jobs running on continuous integration systems like [Jenkins](https://jenkins.io/).
+
+#### Globally installed packages
+Additionally versioneye-update can also be used to monitor the globally installed npm packages (with `npm install <packagename> -g`) on a machine. In this scenario a temporary pseudo `package.json` file is generated and uploaded to VersionEye.
+It makes sense to update such a VersionEye project regularly, for instance as a cron job or similar.
 
 ## Installation
 
@@ -48,6 +52,7 @@ Project ID of the current project in versioneye.com
 
 **`--file <string>`**  or **`-f <string>`**
 Project file to upload to versioneye.com (if not specified: package.json)
+Cannot be used in conjunction with `--globalinstalls`
 
 **`--baseurl <string>`** or **`-b <string>`**
 Set the base URL for the VersionEye API. Only needed for VersionEye Enterprise
@@ -76,6 +81,20 @@ Fails if any of the used components is noted as outdated
 **`--ignorechecks`** or **`-i`**
 Does not use special return codes to signal failed license, security or up-to-date checks. Return code will always be 0.
 
+**`--globalinstalls`** or **`-g`**
+Creates a pseudo package.json from the globally installed npm modules and uploads it to VersionEye. 
+Usefull to keep the globally installed packages on a machine up to date.
+The VersionEye project must exist.
+The package name is created based on the local computer name, except `--globalpackagename` is set.
+Cannot be used in conjunction with `--file`
+
+**`--globalpackagename <string>`**
+Specifies the package name to use in the pseudo package.json created by the flag `--globalinstalls`
+
+**`--configfile <string>`** or **`-c`**
+The settings are loaded from the given file instead being loaded from `.versioneye-update.json`
+(This is the only command line argument that can not be specified in the configuration file)  
+
 (note that all command line parameters are case sensitive)
 
 ## Return codes
@@ -91,6 +110,28 @@ Does not use special return codes to signal failed license, security or up-to-da
 | -6 | MissingApiKey |
 | -7 | MissingProjectId | 
 | -8 | OutdatedComponentsFailed | 
+| -9 | InvalidCommandLineOption |
+
+## Configuration file
+
+All command line parameter can also be specified in a configuration file using JSON format.
+This file looks like this:
+```
+{
+	"apikey": "1234567891234567",
+	"projectid": "12345abcdef12345abcdef12",
+	"listoutdated": true,
+	"dump": true,
+	...
+}
+```
+
+The default file name for the configuration is `.versioneye-update.json` in the current working directory.
+A different configuration file can be specified with the `--configfile` command line argument.
+If a setting is specified in the configuration file and also specified on the command line, the configuration file setting will be ignored and the command line argument will be used.
+Precedence:
+1. Command line argument
+2. Configuration file setting
 
 ## Example integration 
 
@@ -117,6 +158,12 @@ Currently VersionEye supports various package managers. You can throw any of thi
  - project.clj 
  - *.gradle 
  - *.sbt 
+ - project.json
+ - package.conf
+ - *.nuspec
+ - metadata.rb
+ - Berksfile
+ - Berksfile.lock
 
 ## Feedback 
 

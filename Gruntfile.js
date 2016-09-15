@@ -9,14 +9,14 @@ module.exports = function (grunt) {
             },
             files: {
                 src: [
-                'bin/**/*.js',
-                'lib/**/*.js']
+                    'bin/**/*.js',
+                    'lib/**/*.js']
             },
             gruntfile: {
                 src: 'Gruntfile.js'
             }
         }
-        
+
     });
 
     grunt.loadNpmTasks('grunt-contrib-jshint');
