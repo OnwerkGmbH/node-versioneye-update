@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.4.0] - 09/25/2016
+### Added
+- Adding possibility to create and update projects containing the globally installed npm packages
+- Added `--createproject` command line parameter to create projects via command line 
+
 ## [1.3.0] - 07/27/2016
 ### Added
 - Allow upload of project files for package manager Nuget (Microsoft .NET platform) and Berkshelf (Chef)
