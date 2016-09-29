@@ -2,26 +2,18 @@ module.exports = function (grunt) {
 
     // Project configuration.
     grunt.initConfig({
-        jshint: {
-            options: {
-                jshintrc: '.jshintrc',
-                ignores: []
-            },
+        eslint: {
             files: {
                 src: [
-                'bin/**/*.js',
-                'lib/**/*.js']
-            },
-            gruntfile: {
-                src: 'Gruntfile.js'
+                    '**/*.js',
+                    '!node_modules/**/*']
             }
         }
-        
     });
 
-    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-eslint');
 
     // Default task(s).
 
-    grunt.registerTask('default', ['jshint']);
+    grunt.registerTask('default', ['eslint']);
 };
