@@ -2,10 +2,15 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.4.1] - 09/30/2016
+### Changed
+- Changed Windows-style line endings to Unix-style line endings for bin/versioneye-update
+
 ## [1.4.0] - 09/25/2016
 ### Added
 - Adding possibility to create and update projects containing the globally installed npm packages
-- Added `--createproject` command line parameter to create projects via command line 
+- Added `--createproject` command line parameter to create projects via command line
+- Added configuration files
 
 ## [1.3.0] - 07/27/2016
 ### Added
