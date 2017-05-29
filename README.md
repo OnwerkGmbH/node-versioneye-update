@@ -175,6 +175,7 @@ Currently VersionEye supports various package managers. You can throw any of thi
  - Podfile 
  - Podfile.lock 
  - package.json 
+ - yarn.lock 
  - composer.json 
  - composer.lock
  - bower.json 
