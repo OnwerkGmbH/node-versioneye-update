@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.4.3] - 05/30/2017
+### Added
+- [#10](https://github.com/OnwerkGmbH/node-versioneye-update/issues/10) Added missing comma (@iketari)
+
 ## [1.4.2] - 05/29/2017
 ### Added
 - [#9](https://github.com/OnwerkGmbH/node-versioneye-update/pull/9) Added yarn.lock to allowed files (@polarctos)
