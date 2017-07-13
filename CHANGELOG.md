@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.4.4] - 07/13/2017
+### Added
+- [#14](https://github.com/OnwerkGmbH/node-versioneye-update/pull/14) Updated allowed packages list for NPM (@ryanpetrick)
+
 ## [1.4.3] - 05/30/2017
 ### Added
 - [#10](https://github.com/OnwerkGmbH/node-versioneye-update/issues/10) Added missing comma (@iketari)
