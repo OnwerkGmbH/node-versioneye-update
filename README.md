@@ -184,14 +184,17 @@ Currently VersionEye supports various package managers. You can throw any of thi
  - biicode.conf 
  - pom.xml 
  - project.clj 
- - *.gradle 
- - *.sbt 
+ - \*.gradle 
+ - \*.sbt 
  - project.json
  - package.conf
- - *.nuspec
+ - \*.nuspec
  - metadata.rb
  - Berksfile
  - Berksfile.lock
+ - npm-shrinkwrap.json
+ - package-lock.json
+ - JSPN.io
 
 ## Feedback 
 
