@@ -19,7 +19,10 @@
     "commandline",
     "continuous integration",
     "jenkins",
-    "hudson"
+    "hudson",
+    "license",
+    "security",
+    "vulnerabilities"
   ],
   "dependencies": {
     "colors": "^1.1.2",
